@@ -21,5 +21,6 @@ function getRandomNumber(max) {
 
 /* Funzione per verificare se un numero è pari o dispari  */
 function isEven(num) {
-    return !(num % 2);
+    const result = !(num % 2) ? 'even' : 'odd';
+    return result;
 }

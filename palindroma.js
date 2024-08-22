@@ -33,7 +33,7 @@ function getDataForm(e) {
     
     // # FASE DI RACCOLTA DATI
     // Recuperiamo l'input dell'utente
-    const inputWord = inputWordField.value;
+    const inputWord = inputWordField.value.trim();
     console.log(inputWord);
     
     // # FASE DI OUTPUT
