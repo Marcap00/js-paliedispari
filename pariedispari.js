@@ -48,6 +48,7 @@ formEvenOdd.addEventListener('submit', function(e) {
     // Raccolgo l'opzione pari o dispari dell'utente
     const option = options.value;
     console.log(option);
+
     // Raccolgo il numero che mi ha messo l'utente
     const inputNumb = parseInt(inputNumbField.value); 
     console.log(inputNumb);
@@ -59,18 +60,29 @@ formEvenOdd.addEventListener('submit', function(e) {
 
     // Confrontiamo i risultati
     // Settiamo che l'utente ha perso di default
-    let text = 'Hai Perso!';
+   /*  let text = 'Hai Perso!';
     // Apriamo una coindizione
     if (option === 'even' && isEven(sum)) { // Se l'opzione è pari e il risultato è pari allora Hai vinto
         text = 'Hai vinto!';
     } else if (option === 'odd' && !(isEven(sum))) {  // Se l'opzione è dispari e il risultato è dispari allora Hai vinto
         text = 'Hai vinto!';
-    }
+    } */
+
+    // Operatore ternario per confrontare se i risultati sono uguali
+    const text = option === isEven(sum) ? 'Hai vinto!' : 'Hai Perso!';
+    // Decidiamo il colore del risultato dell'output
+    outputEvenOdd.classList.remove('text-succes');
     
+    outputEvenOdd.classList.add('text-danger');
+    if (text === 'Hai vinto!') {
+        outputEvenOdd.classList.remove('text-danger');
+
+        outputEvenOdd.classList.add('text-success');
+    }
     // # FASE DI OUTPUT
     //Stampiamo in pagina
-    outputEvenOdd.innerText = text;
     outputCPUNumb.innerText = `Il numero del CPU è: ${CPUNumber}`;
+    outputEvenOdd.innerText = text;
     
     // ! Resettiamo il form
     formEvenOdd.reset();
