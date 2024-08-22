@@ -1,3 +1,5 @@
+
+/* Funzione per verificare se una parola è palindroma */
 function isPalindrome(inputWord) {
     
     let reverseWord = '';
@@ -8,4 +10,16 @@ function isPalindrome(inputWord) {
     const result = inputWord === reverseWord ? true : false;
     console.log(result);
     return result;
+}
+
+
+/* Funzione per generare un numero random */
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * max) + 1;
+}
+
+
+/* Funzione per verificare se un numero è pari o dispari */
+function isEven(number) {
+    return !(number % 2);
 }
