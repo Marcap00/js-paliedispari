@@ -19,7 +19,7 @@ function getRandomNumber(max) {
 }
 
 
-/* Funzione per verificare se un numero è pari o dispari */
-function isEven(number) {
-    return !(number % 2);
+/* Funzione per verificare se un numero è pari o dispari  */
+function isEven(num) {
+    return !(num % 2);
 }

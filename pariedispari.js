@@ -61,9 +61,9 @@ formEvenOdd.addEventListener('submit', function(e) {
     // Settiamo che l'utente ha perso di default
     let text = 'Hai Perso!';
     // Apriamo una coindizione
-    if (options === 'even' && isEven(sum)) { // Se l'opzione è pari e il risultato è pari allora Hai vinto
+    if (option === 'even' && isEven(sum)) { // Se l'opzione è pari e il risultato è pari allora Hai vinto
         text = 'Hai vinto!';
-    } else if (options === 'odd' && !(isEven(sum))) {  // Se l'opzione è dispari e il risultato è dispari allora Hai vinto
+    } else if (option === 'odd' && !(isEven(sum))) {  // Se l'opzione è dispari e il risultato è dispari allora Hai vinto
         text = 'Hai vinto!';
     }
     
