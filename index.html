@@ -18,16 +18,36 @@
         <form id="form-palindrome" class="row mt-4 g-3 border border-2 rounded-4">
             <p class="m-2">Inserisci una parola:</p>
             <div class="col-auto">
-              <input type="text" id="input-word" class="form-control" placeholder="example">
+                <input type="text" id="input-word" class="form-control" placeholder="example">
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Invia</button>
+                <button type="submit" class="btn btn-primary mb-3">Invia</button>
             </div>
             <p id="output"></p>
-          </form>
+        </form>
+        <hr>
+        <p>Inserisci pari o dispari e un numero, se hai scelto pari e il risultato della somma del tuo numero e di quello della CPU è pari, hai vinto; viceversa, hai perso.</p>
+        <form id="form-evenodd" class="row mt-4 g-3 border border-2 rounded-4">
+            <p class="m-2">Scegli pari o dispari:</p>
+            <div class="col-12">
+                <select id="options" class="form-select w-auto">
+                    <option value="even">Pari</option>
+                    <option value="odd">Dispari</option>
+                </select>
+            </div>
+            <div class="col-auto m-3 ms-0">
+                <p class="m-2">Scegli un numero da 1 a 5:</p>
+                <input type="text" id="input-number" class="form-control" placeholder="example">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary mb-3">Invia</button>
+            </div>
+            <p id="output-evenodd"></p>
+        </form>
     </div>
     <!-- Bootstrap 5 script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="palindroma.js"></script>
+    <script src="pariedispari.js"></script>
 </body>
 </html>
