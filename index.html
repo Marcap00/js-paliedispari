@@ -13,6 +13,7 @@
     <script src="functions.js"></script>
 </head>
 <body>
+    <!-- Form Controllo palindromo -->
     <div class="container py-4">
         <p>Inserisci una parola e il programma ti risponderà se è palindroma oppure no.</p>
         <form id="form-palindrome" class="row mt-4 g-3 border border-2 rounded-4">
@@ -26,6 +27,7 @@
             <p id="output"></p>
         </form>
         <hr>
+        <!-- Form Pari o dispari -->
         <p>Inserisci pari o dispari e un numero, se hai scelto pari e il risultato della somma del tuo numero e di quello della CPU è pari, hai vinto; viceversa, hai perso.</p>
         <form id="form-evenodd" class="row mt-4 g-3 border border-2 rounded-4">
             <p class="m-2">Scegli pari o dispari:</p>
@@ -37,7 +39,7 @@
             </div>
             <div class="col-auto m-3 ms-0">
                 <p class="m-2">Scegli un numero da 1 a 5:</p>
-                <input type="text" id="input-number" class="form-control" placeholder="example">
+                <input type="number" id="input-number" class="form-control" placeholder="1" min="1" max="5">
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary mb-3">Invia</button>
